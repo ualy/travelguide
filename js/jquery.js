@@ -1,17 +1,17 @@
 $(document).ready(function() {
-    // jQuery element selection and manipulation
+    
     $('header').css('border-bottom', '2px solid #3498db');
     
-    // Change styles with jQuery
+    
     $('.logo h1').css({
         'color': '#2c3e50',
         'text-shadow': '1px 1px 2px rgba(0,0,0,0.1)'
     });
     
-    // Change attributes
+    
     $('.social-links a:first').attr('href', 'https://facebook.com/travelexplorer');
     
-    // jQuery animations
+    
     $('.destination').hover(
         function() {
             $(this).find('img').stop().fadeTo(200, 0.8);
@@ -23,7 +23,7 @@ $(document).ready(function() {
         }
     );
     
-    // Add click event for view tours buttons
+    
     $('.view-tours').click(function(e) {
         e.preventDefault();
         $(this).text('Loading...').css('background-color', '#3498db');
@@ -32,12 +32,12 @@ $(document).ready(function() {
         }, 1000);
     });
     
-    // Slide toggle for mobile menu
+    
     $('.navbar-toggler').click(function() {
         $('#navbarNav').slideToggle();
     });
     
-    // Form validation with jQuery
+    
     $('form').submit(function(e) {
         const email = $(this).find('input[type="email"]').val();
         if (!email.includes('@')) {
@@ -46,7 +46,7 @@ $(document).ready(function() {
         }
     });
     
-    // Dynamic element addition
+    
     $('#featured').append('<button id="show-more" class="btn-more">Show More Destinations</button>');
     
     $('#show-more').click(function() {
@@ -62,9 +62,9 @@ $(document).ready(function() {
         $(this).fadeOut();
     });
     
-    // Callback function example (advanced)
+    
     function fetchWeather(city, callback) {
-        // Simulate API call
+        
         setTimeout(() => {
             const weather = {
                 city: city,
