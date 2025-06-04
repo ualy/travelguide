@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <div id="welcome-banner" class="welcome-message">
+    Welcome to Travel Explorer! Ready for an adventure?
+    <button id="close-welcome">×</button>
+</div>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Travel Explorer</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login-register.html">Login/Sign up</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Explore Amazing Destinations</h2>
+        <p>Find your next travel adventure.</p>
+        <form action="search_results.html" method="get" class="search-form">
+            <input type="text" name="query" placeholder="Search for destinations..." required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="featured">
+        <h2>Featured Destinations</h2>
+        <ul>
+            <li>
+                <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg" alt="Paris, Eiffel Tower">
+                <h3>Paris</h3>
+                <p>Explore the city of lights!</p>
+            </li>
+            <li>
+                <img src="https://plus.unsplash.com/premium_photo-1672082422409-879d79636902?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>The city that never sleeps.</p>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1547448526-5e9d57fa28f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>A mix of tradition and technology.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="hot-tours">
+        <h2>Hot Tours</h2>
+        <ul>
+            <li>
+                <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg" alt="Paris">
+                <h3>Paris Adventure</h3>
+                <p>Discover the magic of Paris with exclusive tours.</p>
+                <a href="destinations.html" class="view-tours">View Tours</a>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1547448526-5e9d57fa28f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg" alt="Tokyo">
+                <h3>Tokyo Wonders</h3>
+                <p>Explore the futuristic city with our guided tours.</p>
+                <a href="destinations.html" class="view-tours">View Tours</a>
+            </li>
+            <li>
+                <img src="https://plus.unsplash.com/premium_photo-1672082422409-879d79636902?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg" alt="New York">
+                <h3>New York City</h3>
+                <p>Get the best NYC tours with us!</p>
+                <a href="destinations.html" class="view-tours">View Tours</a>
+            </li>
+        </ul>
+                </ul>
+        <div class="weather-section">
+            <button id="weather-btn" class="btn-more">Check Weather for Popular Destinations</button>
+            <div id="weather-info"></div>
+        </div>
+        
+        <div id="random-discount"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+<div id="welcomeModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Welcome to Travel Explorer!</h3>
+    <p>Discover your next adventure with us.</p>
+    <button id="modalButton">Explore Now</button>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js" defer></script>
+<script src="js/jquery.js" defer></script>
+</body>
+</html>
